@@ -35,6 +35,7 @@ function App() {
       const response= await fetch(`https://jsonplaceholder.typicode.com/albums`);
 
       setUsers(await response.json()); 
+      
 
       // const data=await response.json();
       // console.log(data);
@@ -46,6 +47,7 @@ function App() {
  useEffect(()=>{
  
   getUser();
+  alert('refresh the page to change the wallpaper');
   
  },[]);
 

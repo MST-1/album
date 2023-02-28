@@ -1,5 +1,7 @@
 import React from "react";
 import { Link ,ro} from "react-router-dom";
+import Nav from "./navBar";
+import "./for css/updateElement.css"
 
 const UpdateEle=(props)=>{
 
@@ -8,7 +10,9 @@ const all=(e)=>{
  console.log(props.num);
 //  console.log(props.users);
 
- let text=e.target.parentElement.firstElementChild.value;
+//  let text=e.target.parentElement.parentElement.firstElementChild;
+ let text=e.target.parentElement.parentElement.firstElementChild.nextSibling.value;
+
  console.log(text);
 
  let id=props.num;
@@ -32,21 +36,31 @@ const all=(e)=>{
  props.setUsers(mig);
 
 
- console.log(props.users)}
+ console.log(props.users)
+}
 
 // let word=props.setText;
 // word(text);
 
 
 
-return( <div className="updateCont">
+return( <>
 
-<form action="/" className="form">
-  <input type="text"  placeholder="Enter The Text" id={props.id} className="text" />
-  <input type="submit" name="submit"  onClick={all}/>
+<Nav/>
+<div className="updateCont">
+<div className="box">
+<form action="#" className="box1">
+  <div className="heading">
+    <h1> Title of Album no :{props.num}  </h1>
+  </div>
+  <input type="text"  placeholder="Enter The Title" id={props.id} className="text" />
+  
+  <Link to="/"><input type="submit" name="submit"  onClick={all}/></Link>
 </form>
+</div>
 
-</div>)
+
+</div></>)
 
 
 
