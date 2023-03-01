@@ -61,7 +61,7 @@ function App() {
       <BrowserRouter>
             <Routes>
              
-              <Route path='/' exact={true} element={<UserIF users={users} setUsers={setUsers} cId={cId} setcId={setcId} text={text} setText={setText} num={num} setNum={setNum} setRefresh={setRefresh} refresh={refresh}/>}/>
+              <Route path='/album' exact={true} element={<UserIF users={users} setUsers={setUsers} cId={cId} setcId={setcId} text={text} setText={setText} num={num} setNum={setNum} setRefresh={setRefresh} refresh={refresh}/>}/>
               <Route  element={<Nav/>}/>
               <Route  element={<Elements />}/>
    

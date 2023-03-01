@@ -55,7 +55,7 @@ return( <>
   </div>
   <input type="text"  placeholder="Enter The Title" id={props.id} className="text" />
   
-  <Link to="/"><input type="submit" name="submit"  onClick={all}/></Link>
+  <Link to="/album"><input type="submit" name="submit"  onClick={all}/></Link>
 </form>
 </div>
 
